@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <faq_adminhtml_faq_index>
+        <reference name="content">
+            <block type="faq/adminhtml_faq" name="faq" />
+        </reference>
+    </faq_adminhtml_faq_index>
+	
+	 <faq_adminhtml_category_index>
+        <reference name="content">
+            <block type="faq/adminhtml_category" name="category" />
+        </reference>
+    </faq_adminhtml_category_index>
+	
+	<faq_adminhtml_category_edit>
+        <reference name="left">
+            <block type="adminhtml/store_switcher" name="store_switcher" before="-"></block>	
+		</reference>		
+	</faq_adminhtml_category_edit>
+	
+	<faq_adminhtml_faq_edit>
+        <reference name="left">
+            <block type="adminhtml/store_switcher" name="store_switcher" before="-"></block>	
+		</reference>		
+	</faq_adminhtml_faq_edit>
+	
+</layout>

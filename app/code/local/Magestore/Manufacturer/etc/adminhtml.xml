@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<manufacturer translate="title" >
+										<title>Magestore</title>
+										<sort_order>50</sort_order>
+									</manufacturer>
+								</children>
+							</config>
+						</children>
+					</system>
+					
+					<manufacturer translate="title" module="manufacturer">
+						<title>Shopbymanufacturer Module</title>
+						<sort_order>10</sort_order>
+						<children>
+							<items translate="title">
+								<title>Extension categories</title>								
+							</items>							
+						</children>	
+					</manufacturer>	
+
+				</children>
+			</admin>
+		</resources>
+	</acl>
+		
+	<menu>
+		<manufacturer module="manufacturer">
+			<title>Manufacturer</title>
+			<sort_order>71</sort_order>               
+			<children>
+				<items module="manufacturer">
+					<title>Manage Items</title>
+					<sort_order>0</sort_order>
+					<action>manufacturer/adminhtml_manufacturer</action>
+				</items>
+			</children>
+		</manufacturer>
+	</menu>
+</config>
